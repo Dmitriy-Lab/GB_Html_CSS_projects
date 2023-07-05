@@ -188,6 +188,10 @@ box-shadow: 15px 25px 56px 6px rgba(0, 0, 0, 0.06);
     margin: 0px auto 55px;
 }
 
+.long__cards {
+    padding-bottom: 100px;
+}
+
 .long__card {
     transition: all 0.3s;
 }
