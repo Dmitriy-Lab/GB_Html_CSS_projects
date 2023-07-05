@@ -3,7 +3,8 @@
     padding: 0;
 }
 
-.top {
+.top,
+.cards {
     max-width: 1170px;
     margin: 0 auto;
 }
@@ -18,7 +19,6 @@
 .logo {
     max-width: 137px;
     max-height: 40px;
-
 }
 
 .menu__link {
@@ -26,7 +26,7 @@
     margin-left: 35px;
     color: #000000;
     font-size: 14px;
-    font-family: Gilroy-SemiBold;
+    font-family: Gilroy-SemiBold, sans-serif;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
@@ -48,7 +48,7 @@
     margin-bottom: 17px;
     color: #000;
     font-size: 60px;
-    font-family: Gilroy-Bold;
+    font-family: Gilroy-Bold, sans-serif;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
@@ -57,7 +57,7 @@
 .text {
     color: #888;
     font-size: 20px;
-    font-family: Gilroy-Medium;
+    font-family: Gilroy-Medium, sans-serif;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
@@ -66,15 +66,15 @@
 
 .button {
     font-size: 15px;
-    font-family: Gilroy-Bold;
+    font-family: Gilroy-Bold, sans-serif;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
     padding: 16px 35px;
-    border: none; 
+    border: none;
     border-radius: 50px;
     cursor: pointer;
-} 
+}
 
 
 .button_left {
@@ -104,4 +104,146 @@
     padding-bottom: 97px;
     display: flex;
     justify-content: space-between;
+}
+
+.small__cards,
+.long__cards {
+    display: grid;
+    grid-template-columns: 370px 370px 370px;
+    gap: 30px;
+}
+
+.small__cards {
+    padding: 100px 0;
+    margin-bottom: 92px;
+}
+
+.samll_card {
+    padding: 40px 30px 25px 30px;
+    transition: all 0.3s;
+}
+
+.samll_card:hover {
+box-shadow: 15px 25px 56px 6px rgba(0, 0, 0, 0.06);
+}
+
+.small__card_pick {
+    width: 70px;
+    height: 70px;
+    margin-bottom: 25px;
+}
+
+.small__card_header {
+    box-sizing: border-box;
+    margin-bottom: 17px;
+    color: #000;
+    font-size: 24px;
+    font-family: Gilroy-Bold, sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.small__card_text {
+    box-sizing: border-box;
+    margin-bottom: 25px;
+    color: #666;
+    font-size: 15px;
+    font-family: Gilroy-Regular, sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%;
+}
+
+.small__card_read-more {
+    color: #000;
+    font-size: 11px;
+    font-family: Gilroy-Bold, sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%;
+    text-decoration: none;
+}
+
+.cards_title {
+    color: #000;
+    font-size: 45px;
+    font-family: Gilroy-Bold, sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-bottom: 19px;
+    text-align: center;
+}
+
+.cards_subtitle {
+    color: #666;
+    text-align: center;
+    font-size: 16px;
+    font-family: Gilroy-Regular, sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%;
+    max-width: 682px;
+    margin: 0px auto 55px;
+}
+
+.long__card {
+    transition: all 0.3s;
+}
+.long__card:hover {
+box-shadow: 15px 25px 60px -5px rgba(0, 0, 0, 0.10);
+}
+
+.long__card_pick {
+    width: 370px;
+    height: 270px;
+    margin-bottom: 25px;
+}
+
+.long__card_header {
+    margin-bottom: 22px;
+    text-align: center;
+    color: #000;
+    font-size: 24px;
+    font-family: Gilroy-Bold, sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.long__card_text {
+    margin: 0 30px 39px;
+    color: #AAA;
+    text-align: center;
+    font-size: 15px;
+    font-family: Gilroy-Regular, sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%;
+}
+
+.long__card_btn {
+    margin: 0 120px 50px 100px;
+    padding: 15px 46px 15px 46px;
+    color: #FFF;
+    text-align: center;
+    font-size: 13px;
+    font-family: Gilroy-Bold, sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%;
+    background: #F25822;
+    border-radius: 50px;
+    border: 0;
+    cursor: pointer;
+}
+
+.long__card_btn::after {
+    content: '\f054';
+    font-family: 'Font Awesome 5 Free', 'Font Awesome 5 Brands';
+    font-size: 10px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: 150%;
 }
