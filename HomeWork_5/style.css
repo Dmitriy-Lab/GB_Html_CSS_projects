@@ -1,0 +1,374 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/*  header-menu  */
+
+.header {
+    background-color: black;
+}
+
+.header__menu {
+    max-width: 1130px;
+    margin: 0 auto;
+    height: 75px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.header__menu_left,
+.header__menu_right {
+    display: flex;
+    align-items: end;
+    height: 56px;
+    gap: 35px;
+}
+
+.header__menu_logo {
+    width: 44px;
+    height: 38px;
+}
+
+.search {
+    width: 26px;
+    height: 27px;
+}
+
+.hamburger {
+    width: 32px;
+    height: 23px;
+}
+
+.personal {
+    width: 29px;
+    height: 29px;
+}
+
+.market {
+    width: 32px;
+    height: 29px;
+}
+
+.header__menu_link {
+    background-color: black;
+    border: 0;
+    cursor: pointer;
+}
+
+
+/*  brand  */
+
+.brand {
+    height: 764px;
+    background-color: #F1E4E6;
+    display: flex;
+    margin-bottom: 65px;
+}
+
+.brand__man {
+    width: 800px;
+}
+
+.brand__man_pick {
+    width: 100%;
+    height: 100%;
+}
+
+.brand__title {
+    padding: 290px 0 0 63px;
+}
+
+.brand__title_box {
+    display: flex;
+    gap: 16px;
+}
+
+.brand__title_text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.brand__title_main {
+    color: #222;
+    font-family: Lato;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: normal;
+}
+
+.brand__subtitle {
+    color: #222;
+    font-family: Lato;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.brand__title_text_pink {
+    color: #F16D7F;
+}
+
+
+/****** dark cards ******/
+
+.dark_cards {
+    margin-bottom: 95px;
+}
+
+.dark_grid {
+    max-width: 1140px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 260px 180px;
+    gap: 30px;
+}
+
+.dark_card {
+    width: 360px;
+    height: 260px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.dark_card:nth-child(1) {
+    background: url(./img/dark_cards/1for_woman.png);
+}
+
+.dark_card:nth-child(2) {
+    background: url(./img/dark_cards/2for_men.png);
+}
+
+.dark_card:nth-child(3) {
+    background: url(./img/dark_cards/3for_kids.png);
+}
+
+.dark_card:nth-child(4) {
+    background: url(./img/dark_cards/4accesories.png);
+    width: 100%;
+    height: 100%;
+    grid-column: 1/4;
+}
+
+.dark_card_opacity {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(33, 22, 22, 0.70);
+    z-index: 0;
+}
+
+.dark_card_text {
+    z-index: 1;
+}
+
+.dark_card_subtitle {
+    color: #FFF;
+    text-align: center;
+    font-family: Lato;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.dark_card_title {
+    color: #F16D7F;
+    text-align: center;
+    font-family: Lato;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+
+/***** shop *****/
+
+
+.shop__max-width {
+    max-width: 1140px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.shop__title {
+    color: #222;
+    font-family: Lato;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-bottom: 6px;
+}
+
+.shop__subtitle {
+    color: #9F9F9F;
+    font-family: Lato;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-bottom: 57px;
+}
+
+.shop__cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    margin-bottom: 48px;
+}
+
+.shop__card {
+    max-width: 360px;
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.shop__card:hover .shop__card_add-to-card, .shop__card:hover .shop__card_opasity {
+    opacity: 1;
+}
+
+.shop__card_image-box {
+    width: 360px;
+    height: 420px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.shop__card:nth-child(1) .shop__card_image-box {
+    background: url(./img/shop__cards/1shop__card.jpg);
+}
+
+.shop__card:nth-child(2) .shop__card_image-box {
+    background: url(./img/shop__cards/2shop__card.jpg);
+}
+
+.shop__card:nth-child(3) .shop__card_image-box {
+    background: url(./img/shop__cards/3shop__card.jpg);
+}
+
+.shop__card:nth-child(4) .shop__card_image-box {
+    background: url(./img/shop__cards/4shop__card.jpg);
+}
+
+.shop__card:nth-child(5) .shop__card_image-box {
+    background: url(./img/shop__cards/5shop__card.jpg);
+}
+
+.shop__card:nth-child(6) .shop__card_image-box {
+    background: url(./img/shop__cards/6shop__card.jpg);
+}
+
+.shop__card_opasity {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(33, 22, 22, 0.70);
+    opacity: 0;
+    transition: all 0.3s;
+}
+
+.shop__card_add-to-card {
+    padding: 14px 16px 13px 51px;
+    color: #FFF;
+    font-family: Lato;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    border: 1px solid #fff;
+    position: relative;
+    z-index: 1;
+    background: transparent;
+    cursor: pointer;
+    opacity: 0;
+    transition: all 0.3s;
+}
+
+.shop__card_add-to-card::before {
+    content: '';
+    background: url('./img/header/menu-market.svg');
+    background-size: contain;
+    position: absolute;
+    top: 11px; 
+    left: 14px;
+    width: 26px;
+    height: 23px;
+
+}
+
+.shop__card_content {
+    padding: 25px 28px 20px 16px;
+    background-color: #F8F8F8;
+}
+
+.shop__card_title {
+    color: #000;
+    font-family: Lato;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-bottom: 13px;
+}
+
+.shop__card_text {
+    margin-bottom: 18px;
+    color: #5D5D5D;
+    font-family: Lato;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+
+}
+
+.shop__card_price {
+    color: #F16D7F;
+    font-family: Lato;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.shop__browse-all-product {
+    margin-bottom: 60px;
+    cursor: pointer;
+    padding: 15px 39px;
+    background-color: #fff;
+    color: #F26376;
+    font-family: Lato;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    border: 1px solid #FF6A6A;
+    box-sizing: border-box;
+    transition: all 0.3s;
+}
+
+.shop__browse-all-product:hover {
+    background-color: #F26376;
+    color: #fff;
+}
