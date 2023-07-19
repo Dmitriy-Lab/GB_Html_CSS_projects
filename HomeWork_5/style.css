@@ -556,7 +556,8 @@
     }
 
     .dark_cards {
-        margin-bottom: 64px;
+        margin:0 auto 64px;
+        max-width: 500px;
     }
 
     .dark_card:nth-child(4) {
