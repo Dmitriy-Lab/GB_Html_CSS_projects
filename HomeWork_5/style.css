@@ -55,9 +55,85 @@
 .header__menu_link {
     background-color: black;
     border: 0;
+}
+
+
+/***** popup *****/
+
+
+.header__menu_left .header__menu_link,
+.header__menu_right .header__menu_link:not(:first-child) {
     cursor: pointer;
 }
 
+.header__menu_link-summary {
+    display: block;
+}
+
+.header__menu_link-summary::marker {
+    display: none;
+}
+
+.header__menu_link-summary::before {
+    content: url("./img/header/menu-hamburger.svg");
+    cursor: pointer;
+}
+
+.header__menu_popup {
+    background-color: #fff;
+    position: absolute;
+    top: 75px;
+    right: 0;
+    width: 232px;
+    z-index: 2;
+}
+
+.header__menu_popup-value {
+    padding: 32px;
+    display: flex;
+    flex-direction: column;
+}
+
+.popup__block {
+    display: flex;
+    flex-direction: column;
+}
+
+.header__menu_popup-header {
+    color: #000;
+    font-family: Lato;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    padding-bottom: 4px;
+}
+
+.header__menu_popup-title {
+    color: #F16D7F;
+    font-family: Lato;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin: 20px 0 12px;
+
+}
+
+.header__menu_popup-text {
+    margin: 0 0 11px 22px;
+    color: #6F6E6E;
+    font-family: Lato;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-decoration: none;
+}
+
+.header__menu_popup-text:last-child {
+    margin-bottom: 0;
+}
 
 /*****  brand  *****/
 
@@ -139,7 +215,6 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    cursor: pointer;
 }
 
 .dark_card:nth-child(1) {
@@ -196,6 +271,17 @@
     font-style: normal;
     font-weight: 400;
     line-height: normal;
+}
+
+.dark_card_link {
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: transparent;
+    z-index: 2;
 }
 
 
@@ -261,26 +347,32 @@
 
 .shop__card:nth-child(1) .shop__card_image-box {
     background: url(./img/shop__cards/1shop__card.jpg);
+    background-size: contain;
 }
 
 .shop__card:nth-child(2) .shop__card_image-box {
     background: url(./img/shop__cards/2shop__card.jpg);
+    background-size: contain;
 }
 
 .shop__card:nth-child(3) .shop__card_image-box {
     background: url(./img/shop__cards/3shop__card.jpg);
+    background-size: contain;
 }
 
 .shop__card:nth-child(4) .shop__card_image-box {
     background: url(./img/shop__cards/4shop__card.jpg);
+    background-size: contain;
 }
 
 .shop__card:nth-child(5) .shop__card_image-box {
     background: url(./img/shop__cards/5shop__card.jpg);
+    background-size: contain;
 }
 
 .shop__card:nth-child(6) .shop__card_image-box {
     background: url(./img/shop__cards/6shop__card.jpg);
+    background-size: contain;
 }
 
 .shop__card_opasity {
@@ -438,5 +530,81 @@
 
     .dark_cards {
         margin-bottom: 110px;
+    }
+}
+
+@media (max-width: 767px) {
+    .brand__man {
+        display: none;
+    }
+
+    .brand__title {
+        padding-left: 0;
+        margin: 0 auto;
+    }
+
+    .brand__title_box {
+        margin: 148px auto;
+        min-width: 0;
+        padding: 0;
+    }
+
+    .dark_grid {
+        grid-template-columns: 100%;
+        grid-template-rows: 1fr 1fr 1fr 0.45fr;
+        gap: 32px;
+    }
+
+    .dark_cards {
+        margin-bottom: 64px;
+    }
+
+    .dark_card:nth-child(4) {
+        grid-column: 1/2;
+        aspect-ratio: 0;
+        aspect-ratio: 343/111;
+        background-size: cover;
+        background-position: center;
+    }
+}
+
+@media (max-width: 500px) {
+    .header {
+        padding: 0 16px;
+    }
+
+    .personal {
+        display: none;
+    }
+
+    .market {
+        display: none;
+    }
+
+    .brand__title_pink {
+        height: 60px;
+        margin-top: auto;
+        margin-bottom: 2px;
+    }
+
+    .brand__title_main {
+        font-size: 38px;
+    }
+
+    .brand__subtitle {
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 375px) {
+    .shop__cards {
+        gap: 16px;
+        margin-bottom: 40px;
+    }
+
+    .shop__card_image-box {
+        width: 320px;
+        height: 100%;
+        aspect-ratio: 360/420;
     }
 }
