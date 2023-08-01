@@ -22,7 +22,6 @@
   gap: 35px;
 }
 .header__menu_logo {
-  display: block;
   width: 44px;
   height: 38px;
 }
@@ -66,7 +65,7 @@
 }
 
 .header__menu_link-summary::before {
-  content: url("./img/header/menu-hamburger.svg");
+  content: url("../img/header/menu-hamburger.svg");
   cursor: pointer;
 }
 
@@ -119,135 +118,6 @@
   flex-direction: column;
 }
 
-/*****  brand  *****/
-.brand {
-  background-color: #F1E4E6;
-  display: flex;
-  margin-bottom: 65px;
-}
-.brand__man {
-  max-width: 800px;
-  max-height: 764px;
-}
-.brand__man_pick {
-  width: 100%;
-  height: 100%;
-}
-.brand__title {
-  padding: 290px 0 0 63px;
-}
-.brand__title_box {
-  display: flex;
-  gap: 16px;
-  min-width: 401px;
-  padding-right: 34px;
-}
-.brand__title_text {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-.brand__title_text_pink {
-  color: #F16D7F;
-  max-height: 92px;
-}
-.brand__title_main {
-  color: #222;
-  font-family: Lato;
-  font-size: 48px;
-  font-style: normal;
-  font-weight: 900;
-  line-height: normal;
-}
-.brand__subtitle {
-  color: #222;
-  font-family: Lato;
-  font-size: 32px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: normal;
-}
-
-/****** dark cards ******/
-.dark_cards {
-  margin-bottom: 95px;
-}
-
-.dark_grid {
-  max-width: 1140px;
-  margin: 0 auto;
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(2, 1fr);
-  gap: 30px;
-}
-
-.dark_card {
-  aspect-ratio: 360/260;
-  position: relative;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.dark_card:nth-child(1) {
-  background: url(./img/dark_cards/1for_woman.png);
-  background-size: contain;
-}
-.dark_card:nth-child(2) {
-  background: url(./img/dark_cards/2for_men.png);
-  background-size: contain;
-}
-.dark_card:nth-child(3) {
-  background: url(./img/dark_cards/3for_kids.png);
-  background-size: contain;
-}
-.dark_card:nth-child(4) {
-  background: url(./img/dark_cards/4accesories.png);
-  background-size: contain;
-  aspect-ratio: 1140/180;
-  grid-column: 1/4;
-}
-.dark_card_opacity {
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  background-color: rgba(33, 22, 22, 0.7);
-  z-index: 0;
-}
-.dark_card_text {
-  z-index: 1;
-}
-.dark_card_subtitle {
-  text-align: center;
-  color: #fff;
-  font-family: Lato;
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: normal;
-}
-.dark_card_title {
-  text-align: center;
-  color: #F16D7F;
-  font-family: Lato;
-  font-size: 24px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: normal;
-}
-.dark_card_link {
-  display: block;
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  background: transparent;
-  z-index: 2;
-}
-
 /***** shop *****/
 .shop__box-size_block {
   max-width: 1140px;
@@ -280,7 +150,7 @@
 .shop__cards {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: center;
   gap: 30px;
   margin-bottom: 48px;
 }
@@ -303,27 +173,27 @@
   justify-content: center;
 }
 .shop__card:nth-child(1) .shop__card_image-box {
-  background: url(./img/shop__cards/1shop__card.jpg);
+  background: url(../img/shop__cards/1shop__card.jpg);
   background-size: contain;
 }
 .shop__card:nth-child(2) .shop__card_image-box {
-  background: url(./img/shop__cards/2shop__card.jpg);
+  background: url(../img/shop__cards/2shop__card.jpg);
   background-size: contain;
 }
 .shop__card:nth-child(3) .shop__card_image-box {
-  background: url(./img/shop__cards/3shop__card.jpg);
+  background: url(../img/shop__cards/3shop__card.jpg);
   background-size: contain;
 }
 .shop__card:nth-child(4) .shop__card_image-box {
-  background: url(./img/shop__cards/4shop__card.jpg);
+  background: url(../img/shop__cards/4shop__card.jpg);
   background-size: contain;
 }
 .shop__card:nth-child(5) .shop__card_image-box {
-  background: url(./img/shop__cards/5shop__card.jpg);
+  background: url(../img/shop__cards/5shop__card.jpg);
   background-size: contain;
 }
 .shop__card:nth-child(6) .shop__card_image-box {
-  background: url(./img/shop__cards/6shop__card.jpg);
+  background: url(../img/shop__cards/6shop__card.jpg);
   background-size: contain;
 }
 .shop__card_opasity {
@@ -354,7 +224,7 @@
 }
 .shop__card_add-to-card::before {
   content: "";
-  background: url("./img/header/menu-market.svg");
+  background: url("../img/header/menu-market.svg");
   background-size: contain;
   position: absolute;
   top: 11px;
@@ -461,7 +331,7 @@
 
 /***** subscribe *****/
 .subscribe {
-  background-image: url("./img/subscribe__background.png");
+  background-image: url("../img/subscribe__background.png");
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
@@ -615,15 +485,6 @@
     padding-left: 32px;
     padding-right: 41px;
   }
-  .brand__title {
-    padding-top: 0;
-    display: flex;
-    align-items: center;
-  }
-  .dark_grid {
-    margin-left: 17px;
-    margin-right: 17px;
-  }
   .shop__subtitle {
     margin-bottom: 74px;
   }
@@ -645,24 +506,7 @@
     margin: 0 32px;
   }
 }
-@media (max-width: 1140px) {
-  .dark_grid {
-    gap: 20px;
-  }
-}
 @media (max-width: 1024px) {
-  .brand__title_main {
-    font-size: 44px;
-  }
-  .brand__subtitle {
-    font-size: 24px;
-  }
-  .brand__title {
-    padding-left: 39px;
-  }
-  .dark_cards {
-    margin-bottom: 110px;
-  }
   .advantages__box-size_block {
     flex-direction: column;
     align-items: center;
@@ -701,36 +545,6 @@
     margin-bottom: 32px;
   }
 }
-@media (max-width: 767px) {
-  .brand__man {
-    display: none;
-  }
-  .brand__title {
-    padding-left: 0;
-    margin: 0 auto;
-  }
-  .brand__title_box {
-    margin: 148px auto;
-    min-width: 0;
-    padding: 0;
-  }
-  .dark_grid {
-    grid-template-columns: 100%;
-    grid-template-rows: 1fr 1fr 1fr 0.45fr;
-    gap: 32px;
-  }
-  .dark_cards {
-    margin: 0 auto 64px;
-    max-width: 500px;
-  }
-  .dark_card:nth-child(4) {
-    grid-column: 1/2;
-    aspect-ratio: 0;
-    aspect-ratio: 343/111;
-    background-size: cover;
-    background-position: center;
-  }
-}
 @media (max-width: 500px) {
   .header {
     padding: 0 16px;
@@ -740,17 +554,6 @@
   }
   .market {
     display: none;
-  }
-  .brand__title_pink {
-    height: 60px;
-    margin-top: auto;
-    margin-bottom: 2px;
-  }
-  .brand__title_main {
-    font-size: 38px;
-  }
-  .brand__subtitle {
-    font-size: 20px;
   }
   .subscribe__box-size_block {
     margin: 0 17px;
