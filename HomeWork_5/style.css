@@ -29,6 +29,7 @@
 .header__menu_link {
   background-color: #000000;
   border: 0;
+  display: block;
 }
 
 .search {
@@ -280,7 +281,7 @@
 .shop__cards {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: center;
   gap: 30px;
   margin-bottom: 48px;
 }
@@ -792,6 +793,14 @@
   .shop__cards {
     gap: 16px;
     margin-bottom: 40px;
+  }
+  .shop__card {
+    max-width: 100vw;
+  }
+  .shop__card_image-box {
+    max-width: 100%;
+    height: auto;
+    aspect-ratio: 360/420;
   }
   .advantages_image-box {
     width: 320px;

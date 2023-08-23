@@ -29,6 +29,7 @@
 .header__menu_link {
   background-color: #000000;
   border: 0;
+  display: block;
 }
 
 .search {
@@ -343,7 +344,7 @@
 .shop__cards {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: center;
   gap: 30px;
   margin-bottom: 48px;
 }
@@ -716,6 +717,14 @@
     margin: 0 32px;
   }
 }
+@media (max-width: 1172px) {
+  .new-arrivals__box-size_block {
+    margin: 0 16px;
+  }
+  .shop__filters {
+    margin: 0 16px 55px;
+  }
+}
 @media (max-width: 1024px) {
   .advantages__box-size_block {
     flex-direction: column;
@@ -765,6 +774,26 @@
   .market {
     display: none;
   }
+  .new-arrivals__box-size_block {
+    flex-direction: column;
+    justify-content: start;
+  }
+  .new-arrivals__title {
+    margin: 24px 0 32px;
+  }
+  .shop__filters {
+    margin: 0 8px 55px;
+  }
+  .shop__filters_menu-right_link, .shop__filters_menu-right_list_summary {
+    font-size: 12px;
+  }
+  .shop__filters_menu_title {
+    display: none;
+  }
+  .shop__filters_menu_bage {
+    width: 38px;
+    height: 25px;
+  }
   .subscribe__box-size_block {
     margin: 0 17px;
   }
@@ -805,6 +834,14 @@
   .shop__cards {
     gap: 16px;
     margin-bottom: 40px;
+  }
+  .shop__card {
+    max-width: 100vw;
+  }
+  .shop__card_image-box {
+    max-width: 100%;
+    height: auto;
+    aspect-ratio: 360/420;
   }
   .advantages_image-box {
     width: 320px;

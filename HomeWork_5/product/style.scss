@@ -36,6 +36,7 @@
     &__menu_link {
         background-color: $header-footerBgColor;
         border: 0;
+        display: block;
     }
 }
 
@@ -157,9 +158,12 @@
     position: relative;
     display: flex;
     justify-content: center;
+    overflow-x: hidden;
 
     &__pick {
-        margin: 11px 0 42px
+        margin: 11px 0 42px;
+        aspect-ratio: 0.8;
+        max-width: 100vw;
     }
 
     &__left_btn {
@@ -463,14 +467,14 @@
                 outline: 1px solid #F26376;
             }
 
-            &:focus-visible+.quantity__popup-value_label  {
+            &:focus-visible+.quantity__popup-value_label {
                 color: #F26376;
             }
         }
 
         &_label {
             @include textPropertys(#6F6E6E, Lato, 14px, normal, 400, normal);
-            padding-left:9px ;
+            padding-left: 9px;
         }
     }
 }
@@ -820,9 +824,31 @@
     }
 }
 
-@media (max-width: 1140px) {}
+@media (max-width: 1172px) {
+    .new-arrivals {
+        &__box-size_block {
+            margin: 0 16px;
+        }
+    }
+}
+
+@media (max-width: 1160px) {
+    .description__box-size_block {
+        width: auto;
+    }
+}
 
 @media (max-width: 1024px) {
+
+    .slider {
+        &__pick {
+            margin: 30px 0 30px;
+        }
+    }
+
+    .description {
+        margin: 0 0 130px;
+    }
 
     .advantages__box-size_block {
         flex-direction: column;
@@ -872,10 +898,6 @@
     }
 }
 
-@media (max-width: 767px) {}
-
-
-
 @media (max-width: 500px) {
     .header {
         padding: 0 16px;
@@ -887,6 +909,33 @@
 
     .market {
         display: none;
+    }
+
+    .new-arrivals {
+        &__box-size_block {
+            flex-direction: column;
+            justify-content: start;
+        }
+
+        &__title {
+            margin: 24px 0 32px;
+        }
+    }
+
+    .description {
+        margin-bottom:64px;
+
+        &__content {
+            margin: 0 15px;
+        }
+    }
+
+    .sort__heading {
+        font-size:10px ;
+    }
+
+    .shop {
+        margin:0 9px 64px;
     }
 
     .subscribe__box-size_block {
@@ -939,6 +988,16 @@
     .shop__cards {
         gap: 16px;
         margin-bottom: 40px;
+    }
+
+    .shop__card {
+        max-width: 100vw;
+
+        &_image-box {
+            max-width: 100%;
+            height: auto;
+            aspect-ratio: 360/420;
+        }
     }
 
     .advantages_image-box {
